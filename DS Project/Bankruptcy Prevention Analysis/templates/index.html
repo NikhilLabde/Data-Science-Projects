@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bankruptcy Prediction</title>
+</head>
+<body>
+    <h1>Bankruptcy Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="industrial_risk">Industrial Risk:</label>
+        <input type="text" id="industrial_risk" name="industrial_risk"><br><br>
+        <label for="management_risk">Management Risk:</label>
+        <input type="text" id="management_risk" name="management_risk"><br><br>
+        <label for="financial_flexibility">Financial Flexibility:</label>
+        <input type="text" id="financial_flexibility" name="financial_flexibility"><br><br>
+        <label for="credibility">Credibility:</label>
+        <input type="text" id="credibility" name="credibility"><br><br>
+        <label for="competitiveness">Competitiveness:</label>
+        <input type="text" id="competitiveness" name="competitiveness"><br><br>
+        <label for="operating_risk">Operating Risk:</label>
+        <input type="text" id="operating_risk" name="operating_risk"><br><br>
+        <button type="submit">Predict</button>
+    </form>
+    <h2>{{ prediction_text }}</h2>
+</body>
+</html>
